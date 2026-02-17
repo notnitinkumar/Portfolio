@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitin Kumar - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-900 text-gray-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+    
+    <!-- Navbar -->
+    <header class="bg-gray-900/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-gray-800" >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="#hero" class="text-2xl font-bold text-white tracking-tight">Nitin Kumar</a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-8">
+              <a href="#about" class="nav-link">About</a>
+              <a href="#skills" class="nav-link">Skills</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#cp-stats" class="nav-link">CP Stats</a>
+              <a href="#contact" class="nav-link">Contact</a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:hidden bg-gray-900 border-t border-gray-800" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">About</a>
+          <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">Skills</a>
+          <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">Projects</a>
+          <a href="#cp-stats" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">CP Stats</a>
+          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-16">
+      <!-- Display Name -->
+      <section id="hero" class="relative bg-gray-900 text-white py-24 md:py-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[100px] -z-10"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+          <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Nitin Kumar</span>
+          </h1>
+          <p class="mt-4 text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            Software Engineer & Competitive Programmer. <br>I build robust web applications and solve complex algorithmic problems.
+          </p>
+          <div class="mt-10 flex justify-center gap-4">
+            <a href="#contact" class="btn-primary">
+              Hire Me
+            </a>
+            <a href="#projects" class="btn-secondary">
+              View Work
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me  -->
+      <section id="about" class="section py-20 bg-gray-900 border-t border-gray-800/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3 flex justify-center">
+              <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <img src="Assets/My Image/DSC_0557.jpeg" alt="Nitin Kumar" class="relative rounded-full w-64 h-64 object-cover object-[50%_60%] border-4 border-gray-800 shadow-2xl" />
+              </div>
+            </div>
+            <div class="md:w-2/3">
+              <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+                <span class="w-10 h-1 bg-indigo-500 rounded-full"></span> About Me
+              </h2>
+              <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                I'm a software engineering student who enjoys solving complex problems and building practical software. My interest in technology started with curiosity about how things work, which gradually turned into a passion for programming.
+              </p>
+              <p class="text-lg text-gray-300 leading-relaxed">
+                Apart from building functional web apps, I am an active Competitive Programmer. I enjoy the mental sport of optimizing code and climbing leaderboards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section/Technical Arsenal -->
+      <section id="skills" class="section py-20 bg-gray-800/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-12">Technical Arsenal</h2>
+          <div class="max-w-5xl mx-auto flex flex-wrap justify-center gap-3">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3 & Tailwind</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">DSA</span>
+          </div>
+        </div>
+      </section>
+
+<!-- Projects Section -->
+      <section id="projects" class="section py-20 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group bg-gray-800 rounded-xl border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10">
+              <div class="h-65 overflow-hidden">
+                <img src="Assets/Logo/Geonex.png" alt="Geonex" class="p-5 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">GEONEX</h3>
+                <p class="text-gray-400 mb-4 text-sm line-clamp-3">
+                  A webapp to understand basic concepts of geology along with a complete package to retrieve geological data.
+                </p>
+                <div class="flex gap-4 mt-auto justify-center">
+                  <p class="text-sm font-semibold text-gray-400 hover:text-white px-3 py-1.5 transition-colors">Coming Soon</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10">
+              <div class="h-65 overflow-hidden">
+                 <img src="Assets/Logo/Codepulse.png" alt="CodePulse" class="w-full p-5 object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">CodePulse</h3>
+                <p class="text-gray-400 mb-4 text-sm line-clamp-3">
+                   All in one Competitive programming package to analyse contest history, track problems and schedule contests.
+                </p>
+                <div class="flex gap-4 mt-auto justify-center">
+                  <p class="text-sm font-semibold text-gray-400 hover:text-white px-3 py-1.5 transition-colors">Coming Soon</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10">
+              <div class="h-65 overflow-hidden">
+                <img src="Assets/Logo/Portfolio quicklook.png" alt="Portfolio" class="w-full p-5 object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">My Portfolio</h3>
+                <p class="text-gray-400 mb-4 text-sm line-clamp-3">
+                   A website to connect with clients along with showcasing my skills, interest, projects and active CP Participations.
+                </p>
+                <div class="flex gap-4 mt-auto">
+                  <a href="#" class="text-sm font-semibold text-white bg-gray-700 hover:bg-indigo-600 px-3 py-1.5 rounded transition-colors">Live Demo</a>
+                  <a href="#" class="text-sm font-semibold text-gray-400 hover:text-white px-3 py-1.5 transition-colors">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- CP Stats  -->
+      <section id="cp-stats" class="section py-20 bg-gray-800 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+                <path d="M0 0H200V200H0V0Z" stroke="white" stroke-width="1"/>
+                <path d="M20 20H180V180H20V20Z" stroke="white" stroke-width="1"/>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Competitive Programming</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+              I actively solve algorithmic challenges across various platforms. Here are my current standings.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            
+            <div class="cp-card relative bg-gray-900 rounded-2xl p-6 border border-gray-700 hover:border-blue-500 transition-all duration-300 group">
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center gap-3">
+                  <img src="https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3628695-3029920.png" alt="CF" class="w-10 h-10 rounded bg-white p-1" />
+                  <h3 class="font-bold text-lg text-gray-200">Codeforces</h3>
+                </div>
+                <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
+              </div>
+              
+              <div class="mb-6 text-center py-4 bg-gray-800/50 rounded-lg">
+                <span class="block text-gray-400 text-xs uppercase tracking-wider mb-1">Max Rating</span>
+                <span id="cf-rating" class="font-mono text-4xl font-bold text-blue-400">---</span>
+              </div>
+              
+              <a href="https://codeforces.com/profile/BlueEnchanter" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-gray-800 hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-sm font-medium text-gray-300">
+                <span>View Profile</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </a>
+            </div>
+
+            <div class="cp-card relative bg-gray-900 rounded-2xl p-6 border border-gray-700 hover:border-yellow-600 transition-all duration-300 group">
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center gap-3">
+                  <img src="https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg" alt="CC" class="w-10 h-10 rounded bg-white" />
+                  <h3 class="font-bold text-lg text-gray-200">CodeChef</h3>
+                </div>
+                <div class="w-2 h-2 rounded-full bg-yellow-600 animate-pulse"></div>
+              </div>
+              
+              <div class="mb-6 text-center py-4 bg-gray-800/50 rounded-lg">
+                <span class="block text-gray-400 text-xs uppercase tracking-wider mb-1">Max Rating</span>
+                <span id="cc-rating" class="font-mono text-4xl font-bold text-yellow-500">1614</span>
+              </div>
+              
+              <a href="https://www.codechef.com/users/notwhitedevil" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-gray-800 hover:bg-yellow-700 hover:text-white rounded-lg transition-colors text-sm font-medium text-gray-300">
+                <span>View Profile</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </a>
+            </div>
+
+            <div class="cp-card relative bg-gray-900 rounded-2xl p-6 border border-gray-700 hover:border-orange-500 transition-all duration-300 group">
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center gap-3">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LC" class="w-10 h-10 rounded bg-white p-1" />
+                  <h3 class="font-bold text-lg text-gray-200">LeetCode</h3>
+                </div>
+                <div class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></div>
+              </div>
+              
+              <div class="mb-6 text-center py-4 bg-gray-800/50 rounded-lg">
+                <span class="block text-gray-400 text-xs uppercase tracking-wider mb-1">Questions Solved</span>
+                <span id="lc-solved" class="font-mono text-4xl font-bold text-orange-400">---</span>
+              </div>
+              
+              <a href="https://leetcode.com/u/notwhitedevil/" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-gray-800 hover:bg-orange-600 hover:text-white rounded-lg transition-colors text-sm font-medium text-gray-300">
+                <span>View Profile</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section and End of Page -->
+      <section id="contact" class="section py-24 bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
+          <p class="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+            Open to new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          <a
+            href="mailto:nitinkumar.bacf@gmail.com"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition duration-300 inline-block shadow-lg hover:-translate-y-1"
+            >Say Hello</a
+          >
+          
+          <div class="mt-16 flex justify-center gap-8">
+            <a href="https://github.com/notnitinkumar" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.013c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.013C22 6.477 17.523 2 12 2z" clip-rule="evenodd" /></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/notnitinkumar/" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800">
+      <div class="container mx-auto px-4 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Nitin Kumar. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
