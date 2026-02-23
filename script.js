@@ -54,7 +54,7 @@ async function fetchCPStats() {
 
     // 2. LeetCode
     try {
-        const response = await fetch("https://alfa-leetcode-api.onrender.com/notwhitedevil/solved");
+        const response = await fetch("https://alfa-leetcode-api.onrender.com/notnitinkumar/solved");
         const data = await response.json();
         if (data && data.solvedProblem) {
             lcSolvedEl.innerText = data.solvedProblem;
@@ -63,7 +63,7 @@ async function fetchCPStats() {
         }
     } catch (error) {
         console.error("Error fetching LC stats:", error);
-        lcSolvedEl.innerText = "Err";
+        lcSolvedEl.innerText = "wait";
     }
 
     // 3. CodeChef
